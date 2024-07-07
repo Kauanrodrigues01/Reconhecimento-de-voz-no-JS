@@ -18,7 +18,7 @@ function verificaValorDoChute(chute) {
     } 
     
     if (verificaSeEMaiorOuMenorQueOPermitido(numero)) {
-        elementoChute.innerHTML += `<div>Valor inválido: o número precisa ser entre ${menorValor} e ${maiorValor}</div>`
+        elementoChute.innerHTML += `<div>Valor inválido: precisa ser entre ${menorValor} e ${maiorValor}</div>`
         return
     }
 
@@ -56,3 +56,11 @@ document.body.addEventListener('click', evt =>{
         window.location.reload()
     }
 })
+
+const larguraDaTela = window.innerWidth
+window.addEventListener('resize', () => {
+    if (larguraDaTela <= 450){
+        selecionarDificuldade.children[0].textContent = 'dificuldade'
+    }
+})
+ 

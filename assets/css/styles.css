@@ -7,16 +7,17 @@
 }
 
 body{
-    background-color: var(--bg-color);
-    color: var(--primary-color);
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
     margin: 0;
     font-family: var(--font-principal);
     text-align: center;
+    margin: 0 2rem;
 }
 
 h1{
@@ -82,5 +83,96 @@ h3{
 .paragrafo-jogo_iniciado{
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 860px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    #select {
+        font-size: 14.5px;
+        border-radius: 5px;
+        padding: 0.4rem 1rem;
+        margin-top: 1rem;
+    }
+
+    #select:focus{
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14.5px;
+    }
+
+    h3{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .btn-Start-jogarNovamente{
+        font-size: 1.4rem;
+        
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .paragrafo-jogo_iniciado{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    div{
+        font-size: 21px;
+    }
+    .box{
+        padding: 0.6rem 1.7rem;
+        margin-block: 0.8rem;
+        font-size: 2.6rem;
+    }
+    .mensagem{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+    h1{
+        font-size: 1.4rem;
+    }
+    #select {
+        font-size: 12px;
+        padding: 0.3rem 0.5rem;
+        margin-top: 0.7rem;
+        width: 100px;
+    }
+    #select:focus{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 0.8rem;
+        margin-top: 0.7rem;
+    }
+    .btn-Start-jogarNovamente{
+        padding: 5px 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .paragrafo-jogo_iniciado{
+        font-size: 1.1em;
+        margin-bottom: 0.7rem;
+    }
+    div{
+        font-size: 14px;
+    }
+    .box{
+        padding: 0.3rem 1rem;
+        margin-block: 0.8rem;
+        font-size: 2rem;
+    }
+    .mensagem{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }

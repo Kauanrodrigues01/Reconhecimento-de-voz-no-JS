@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: var(--font-principal);
+    text-align: center;
 }
 
 h1{
@@ -43,15 +44,7 @@ h3{
     font-size: 3rem;
 }
 
-#select:focus{
-    color: black;
-    font-size: 1rem;
-}
-
 #select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     border: none;
     outline: none;
     padding: 10px;
@@ -65,11 +58,29 @@ h3{
     margin-top: 1rem;
 }
 
-.btn-jogar{
+#select:focus{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+}
+
+.btn-Start-jogarNovamente{
     padding: 8px 15px;
     border: 0;
     background-color: var(--primary-color);
     border-radius: 10px;
     margin-top: 20px;
     color: var(--bg-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.game-over{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.paragrafo-jogo_iniciado{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
 }

@@ -43,20 +43,33 @@ h3{
     font-size: 3rem;
 }
 
-#select{
-    border: none;
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
-    border-radius: 10px;
-    color: var(--primary-color);
+#select:focus{
+    color: black;
     font-size: 1rem;
-    display: flex;
-    justify-content: center;
+}
+
+#select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent; /* Cor de fundo personalizada */
+    color: var(--primary-color);
+    font-size: 16px;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    border: 1px solid var(--primary-color);
     padding: 0.5rem 1rem;
     margin-top: 1rem;
 }
 
-#select:focus{
-    color: black;
-    font-size: 1rem;
+.btn-jogar{
+    padding: 8px 15px;
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--bg-color);
 }

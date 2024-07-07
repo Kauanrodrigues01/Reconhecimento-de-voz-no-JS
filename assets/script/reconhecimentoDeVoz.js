@@ -11,7 +11,7 @@ const recognition = new SpeechRecognition()
 recognition.lang = 'pt-Br'
 
 // Funções
-function onSpeak(e) {
+function processarFala(e) {
     const chute = e.results[0][0].transcript
     exibeChute(chute)
     verificaValorDoChute(chute)
@@ -33,7 +33,7 @@ function loopGravacao(trueOrFalse) {
     }
 }
 
-recognition.addEventListener('result', onSpeak)
+recognition.addEventListener('result', processarFala)
 
 recognition.addEventListener('end', () => {
     loopGravacao(condicaoLoopGravacao)
